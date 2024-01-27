@@ -1,0 +1,7 @@
+Os componentes do React são pequenos blocos que compõem a interface.
+São escritos em arquivos jsx
+Eles dão muitas vantagens ao serem utilizados como:
+ - Manutenção mais fácil
+ - Deixa o código mais organizado
+ - São bons de serem reutilizados
+ - Melhora o desempenho da aplicação
