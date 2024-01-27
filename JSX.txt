@@ -1,0 +1,3 @@
+O JSX é uma "extensão" da Linguagem Javascript
+Ele não é entendido pelo navegador, porém podemos resolver usando por exemplo o Babel
+Também podemos criar arquivos jsx que trabalha com uma linguagem de marcação chamada XML
