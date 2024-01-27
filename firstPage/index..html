@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React</title>
+  <style>
+    #app{
+      display: grid;
+      font-family: sans-serif;
+      height: 100vh;
+      place-content: center;
+      background-color: darkgray;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script>
+  const {createElement} = React
+  const appDiv  = document.querySelector("#app")
+  const root =  ReactDOM.createRoot(appDiv)
+  const p = createElement('p',{},'Estamos usando React')
+  const main = createElement('main',{},p)
+  root.render(main)
+</script>
+</html>
