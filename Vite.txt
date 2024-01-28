@@ -1,0 +1,6 @@
+Conhecendo o Vite:
+O vite é uma biblioteca que ajuda a construir nossa aplicação.
+Tem um servidor Hot Module Replacement (HMR) e um empacotador (Rollup) que já vem pré-configurado.
+É bem semelhante ao webpack, porém é mais rápido e mais simpes de utilizar.
+Atualmente, a biblioteca vite é a mais recomendada para trabalhar com React.
+O comando de criação do vite: npm create vite@latest
