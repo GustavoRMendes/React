@@ -8,6 +8,14 @@ body{
   color: white;
   
 }
+.img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  display: block;
+}
+
 
 .card {
   background: #151515;
@@ -17,26 +25,9 @@ body{
   border-radius: .4rem;
   padding: .5rem;
 }
-hr{
-  color: gray;
-  border-radius: 1rem;
-}
-.img{
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  margin: auto;
-  display: block;
-}
 
-.button{
-  padding: .6rem;
-  display: block;
-  width: 5rem;
-  cursor: pointer;
-  text-decoration: none;
-  color: crimson;
-}
+
+
 button{
   margin: .2rem;
   background-color: rgb(6, 6, 6);

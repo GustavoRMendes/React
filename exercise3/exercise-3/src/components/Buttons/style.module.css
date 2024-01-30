@@ -1,0 +1,8 @@
+.button{
+  padding: .6rem;
+  display: block;
+  width: 5rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: crimson;
+}
