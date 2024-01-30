@@ -1,0 +1,6 @@
+1.  As props deixam nosso código mais dinâmico.
+2. As props children servem para deixar nosso conteúdo mais flexível.
+3. Nas props children, precisamos colocar <Title> </Title>
+4. Já as props são <Title/> deixando menos flexível.
+5. Podemos desestrurar as props.
+6. Podemos usar o rest;spread parameter nas props.
