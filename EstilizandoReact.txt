@@ -1,0 +1,6 @@
+A estilização no React varia muito.
+Temos o estilo inline, em uma arquivo externo e até com módulos.
+Geralmente separamos esses estilos por pastas para deixar nosso código mais limpo e organizado.
+A estilização com módulo, o nome do arquivo seria como:
+style.module.css
+app.module.css
