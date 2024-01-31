@@ -1,0 +1,1 @@
+Os hooks permitem o uso de state e outros recursos que antes só eram possíveis dentro do React através de classes. Apesar disso, os hooks são opcionais, ficando a seu critério se vai usá-los ou continuar usando as classes
