@@ -1,3 +1,4 @@
 Para o nosso código ficar mais limpo e organizado, nossos arquivos e pastas devem estar bem estruturados.
 Podemos criar uma pasta components para guardarmos os componentes dentro dela.
 Assim ficará mais fácil de se localizar e nosso arquivo principal não ficará tão enorme e difícil de ser alterado.
+E nele também podemos adicionar um arquivo css para cada componente que criarmos, assim facilitando a manutenção do código.
