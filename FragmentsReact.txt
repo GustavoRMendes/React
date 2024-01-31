@@ -1,0 +1,3 @@
+Os Fragmentos permitem agrupar uma lista de filhos sem adicionar nós extras ao DOM. Há também uma nova sintaxe curta para declará-las.
+
+
