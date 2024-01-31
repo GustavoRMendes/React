@@ -1,10 +1,14 @@
 import { useState } from "react";
+function getInitialValue(){
+  console.log("devolvendo valor")
+  return 1 + 1
+}
 export default function Counter() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(() => getInitialValue());
   
   function handleClick() {
-    setCount(count + 1)
-  }
+    setCount((count) => count + 1)
+     }
 
   return {count,handleClick}
 }
