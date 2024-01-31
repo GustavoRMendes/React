@@ -1,0 +1,33 @@
+.title{
+  text-align: center;
+  color: white;
+}
+
+body{
+  background-color: #232323;
+  height: 100vh;
+}
+.buttonCopy{
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+  padding: .4rem;
+  cursor: pointer;
+}
+.buttonGerator{
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  transform: translate(-50%,-50%);
+  padding: .4rem;
+  cursor: pointer;
+}
+
+.result{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
