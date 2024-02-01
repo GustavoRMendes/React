@@ -1,44 +1,61 @@
-.title{
-  text-align: center;
-  color: white;
-}
 
 body{
   background-color: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
 }
+.title{
+  text-align: center;
+  color: white;
+  
+}
+
+main{
+  text-align: center;
+  margin: 1rem;
+  width: 40vw;
+  height: 50vh;
+  background-color: rgb(48, 48, 48);
+  padding: 5rem;
+  border-radius: 1rem;
+}
 .buttonCopy{
-  position: absolute;
-  top: 20%;
-  left: 40%;
-  transform: translate(-50%,-50%);
-  padding: .4rem;
+  padding: .8rem;
   cursor: pointer;
+  margin: 1rem;
+  background-color: #232323;
+  border: none;
+  color: white;
+  border-radius: .5rem
 }
 .buttonGerator{
-  position: absolute;
-  top: 20%;
-  left: 60%;
-  transform: translate(-50%,-50%);
-  padding: .4rem;
+  padding: .8rem;
+  margin: 1rem;
   cursor: pointer;
+  background-color: #232323;
+  border: none;
+  color: white;
+  border-radius: .5rem;
 }
 
 .result{
   color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  margin: block;
+  margin: 1rem;
+  background-color: #232323;
+  padding: .5rem;
 }
-
-
 .input{
-  margin: auto;
-  display: block;
+  margin: 1rem;
+  padding: .6rem;
+  background-color: #232323;
+  border: none;
+  color: white;
+  border-radius: .5rem;
+
 }
-.label{
- display: block;
-  text-align: center;
+.label{ 
   color: white;
 }
