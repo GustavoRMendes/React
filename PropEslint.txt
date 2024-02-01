@@ -1,0 +1,8 @@
+Para habilitar as props no react, use o comando no terminal:
+npm install prop-types
+depois disso importe o PropTypes from 'prop-types'
+e crie um objeto com o mesmo nome da função.
+FunctionName.propTypes = {
+  propName: PropTypes.number,
+  propSetName: PropTypes.func
+}
