@@ -1,0 +1,5 @@
+A Renderização Condicional basicamento usa o operador ternário ou &&.
+Exemplo: Se o checkbox for marcado, mostre o valor.
+Senão, oculte o valor.
+showInput? valor : null
+showInput && valor
