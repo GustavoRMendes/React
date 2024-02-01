@@ -1,0 +1,3 @@
+A renderização da lista de dados pode ser feita com o método map.
+O elemento pai do conteúdo precisa da prop key que tem um valor único que geralmente é o id.
+Serve pra otimizar e identificar cada item.
