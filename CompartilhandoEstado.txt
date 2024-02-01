@@ -1,2 +1,7 @@
 Compartilhando Estado entre Componentes:
 No React, o compartilhamento do state é alcançado ao movê-lo para o elemento pai comum aos componentes que precisam dele. Isso se chama “elevar o state” (state lift). 
+Use o NPM INSTALL PROP-TYPES
+Para compartilhar, você precisa criar um componente. Exemplo: Input
+Cria uma função que retorna o elemento input usando as props como parâmetro.
+O state ficará no elemento pai.
+Insira o componente no elemento pai e passe as props.
