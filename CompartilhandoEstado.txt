@@ -1,0 +1,2 @@
+Compartilhando Estado entre Componentes:
+No React, o compartilhamento do state é alcançado ao movê-lo para o elemento pai comum aos componentes que precisam dele. Isso se chama “elevar o state” (state lift). 
