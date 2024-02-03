@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "prop-types": "^15.8.1"
+  }
+}
