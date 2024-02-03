@@ -3,6 +3,7 @@ import InputText from "./components/InputText";
 import TextArea from "./components/TextArea";
 import Title from "./components/Title";
 import dayjs from 'dayjs'
+import { v4 } from 'uuid'
 function App() {
   const [list] = useState([])
   const [comment,setComment] = useState('')
@@ -13,7 +14,7 @@ function App() {
     setAddComments(() => (
       <>
       {list.map(item => 
-      <div key={Math.floor(Math.random() * 10000)}>
+      <div key={v4}>
         <h2 >{item.email}</h2> 
         <p>{item.comment}</p> 
         <p>Data: {dayjs().format('MM-DD-YYYY')}</p>
