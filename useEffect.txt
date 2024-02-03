@@ -1,0 +1,16 @@
+O useEffect é uma função que tem dependências.
+Ele sicroniza nossas aplicações com sistemas externos com efeitos colaterais.
+O useEffect tem a seguinte sintaxe:
+
+useEffect (() => {
+  return () => {
+
+  };
+},[]);
+
+Você precisa passar dois argumentos para useEffect:
+1. A função de configuração com a código de configuração que se conecta a esse sistema.
+  Ele deve retornar uma função de limpeza com código de limpeza que se desconecta desse sistema.
+
+2. Uma lista de dependências, incluindo todos os valores do seu componente usado dentro dessas funções.
+
