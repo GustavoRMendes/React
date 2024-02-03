@@ -1,0 +1,6 @@
+É um React Hook que permite que você faça referência a um valor que não é necessário para renderização.
+O useRef mantém o valor e o componente não é renderizado.
+Ele é muito útil quando você quer que seu valor não fique renderizando muitas vezes,
+não sendo necessário.
+Ele retorna um objeto com uma propriedade Current, que é o valor.
+Sintaxe: useRef(initialValue)
