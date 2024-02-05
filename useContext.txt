@@ -1,4 +1,4 @@
-useContext é uma ferramenta essencial para todo desenvolvedor React conhecer. Ele permite compartilhar facilmente o estado em suas aplicações. Também é um recurso muito poderoso do React que permite compartilhar dados entre componentes, sem precisar passar props manualmente de um componente para outro.Retorna o valor de contexto para o componente de chamada.
+useContext permite compartilhar facilmente o estado em suas aplicações. Também é um recurso muito poderoso do React que permite compartilhar dados entre componentes, sem precisar passar props manualmente de um componente para outro. Retorna o valor de contexto para o componente de chamada.
 
 Feito em três partes:
   1. Objeto do contexto.
@@ -6,8 +6,21 @@ Feito em três partes:
   3. Hook useContext() que permite pegar os dados de dentro do contexto.
 
 Sintaxe:
-import { useContext } from 'react'
-const theme = useContext(ThemeContext)
-<ThemeContext.Provider value={}>
 
-</ThemeContext.Provider>
+// Contexts / UserContext.js
+import { useContext } from 'react'
+const UserContext = useContext()
+
+// Components / UserInfo.jsx
+UserInfo(){
+  const user = useContext(UserContext)
+  return(
+    <p>Olá, {user.name}</p>
+  )
+}
+
+// App.jsx
+const user = {name:''}
+<UserContext.Provider value={user}>
+  <UserInfo />
+</UserContext.Provider>
