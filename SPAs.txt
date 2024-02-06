@@ -1,0 +1,8 @@
+SPAs (Single Page Applications)
+Aplicações de uma Página (sem reload no navegador).
+No lugar das páginas, temos rotas.
+Rotas são as telas específicas associados a um caminho de url, mas sem fazer reload.
+Funcionam de forma dinâmica, usando JS para gerenciar o conteúdo da página. 
+Carregamento inical é lento , e tem problemas de SEO.
+Melhor experiência pós carregamento inicial e fluidez de um aplicativo nativo.
+
