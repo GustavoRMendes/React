@@ -6,3 +6,43 @@ Funcionam de forma dinâmica, usando JS para gerenciar o conteúdo da página.
 Carregamento inical é lento , e tem problemas de SEO.
 Melhor experiência pós carregamento inicial e fluidez de um aplicativo nativo.
 
+---------------------------------------------------------------
+npm install react-router-dom
+database.json
+---------------------------------------------------------------
+
+Cria o router que são as rotas
+router.jsx
+
+import { createBrowserRouter } from
+"react-router-dom"
+const router = createBrowserRouter([
+{
+  path:"/",
+  element: <Rootlayout/>,
+  children: [
+    {
+        index:true,
+        element: <Home/>
+    },
+    {
+        path: '/products',
+        element: <Products/>    
+    }
+  ]
+},
+{
+    path: "/admin",
+    element: <AdminHome/>
+}
+])
+
+---------------------------------------------------------------
+
+Passa nosso router pro App
+import { RouterProvider } from "react-router-dom"
+return <RouterProvider router= {roter}>
+
+---------------------------------------------------------------
+
+Depois cria as Pages e o RootLayout que precisa do Outlet from "react-router-dom" que vai ser o conteúdo dinâmico.
