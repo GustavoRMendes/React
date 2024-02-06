@@ -1,0 +1,20 @@
+router.jsx
+
+children: [
+{
+  path: "/products",
+  element: <Products />,
+},
+{
+  path: "products/:productId",
+  element: <Product/>
+}
+]
+
+------------------------------------------------------
+
+Product.jsx
+
+import Product from './pages/Product'
+import { useParams } from "react-router-dom"
+const { productId } = useParam()
