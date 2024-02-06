@@ -8,6 +8,7 @@ Melhor experiência pós carregamento inicial e fluidez de um aplicativo nativo.
 
 ---------------------------------------------------------------
 npm install react-router-dom
+Components
 database.json
 ---------------------------------------------------------------
 
@@ -45,4 +46,8 @@ return <RouterProvider router= {roter}>
 
 ---------------------------------------------------------------
 
-Depois cria as Pages e o RootLayout que precisa do Outlet from "react-router-dom" que vai ser o conteúdo dinâmico.
+Depois cria as Pages,Screens, views ou routes e o RootLayout que precisa do Outlet from "react-router-dom" que vai ser o conteúdo dinâmico, e do Link from "react-router-dom".
+
+sintaxe :
+import { Link } from "react-router-dom"
+<Link to= "/products"> Produtos </Link>
