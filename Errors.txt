@@ -1,0 +1,51 @@
+Lidando com Data Fetching e Tratamento de Erros.
+---------------------------------------------------------------
+errorElement => mais fácil de utilizar.
+---------------------------------------------------------------
+ErrorBoundary => um componente que fica em volta dos 
+outros componentes, fica vigiando, se houver erro ele renderiza uma tela específica.
+---------------------------------------------------------------
+Loader => é uma função específica de carregamento,basicamente um componente. Definimos ela no database.json embaixo do element.
+sintaxe: 
+path: "products/:productId",
+element: <Product/>,
+loader: ({  }) => {
+
+}
+
+ou se fizer separado:
+loader: loadProduct
+--------------------------------------------------
+./src/loaders
+  products.js
+  loadProduct({ params })
+  const (productId) = params
+  //...
+  if(!product){
+    throw new Response("404 not found", {status: 404} )
+  }
+  return product
+-----------------------------------------------
+./src/error-boundaries
+  ProductBoundary.jsx
+  const error = useRouteError()
+  if(isRouteErrorResponse(error)){
+    switch(error.status){
+      case 404:
+        return <p> Erro </p>
+      case 401:
+        return <p> Erro </p>
+      case 400:
+        return <p> Erro </p>
+      case 500:
+        return <p></p>    
+    }
+  }
+
+  return <h2> Algo deu Errado <h2/>
+-----------------------------------------
+loader: loadProduct,
+errorElement: <ProductBoundary/>
+-------------------------------------------------
+Product.jsx
+const products = useLoaderData()
