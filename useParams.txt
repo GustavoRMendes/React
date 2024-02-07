@@ -1,0 +1,8 @@
+useParams no react-router-dom, retorna um objeto de chave dos params dinâmicos da URL atual.
+
+sintaxe: 
+import { useParams } from "react-router-dom"
+import games from "data.json"
+const { gameId } = useParams()
+
+const game = games.find(g => g.id === +gameId)
