@@ -51,3 +51,6 @@ Depois cria as Pages,Screens, views ou routes e o RootLayout que precisa do Outl
 sintaxe :
 import { Link } from "react-router-dom"
 <Link to= "/products"> Produtos </Link>
+---------------------------------------------------
+Root Layout vai se repetir nas telas.
+Para ter o Conteúdo, precisamos do Outlet, que diz onde o conteúdo vai ficar.
