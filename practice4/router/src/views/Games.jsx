@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 import games from '../database.json'
 
 export default function Games(){
@@ -14,7 +14,9 @@ export default function Games(){
           <li key={game.id}>
             <h4>{game.name}</h4>
             <p>R$ {game.price}</p>
+            <Link to={`/games/${game.id}`}>
             <button>Ver</button>
+            </Link>
             <button>Compras</button>
           </li>
         ))}

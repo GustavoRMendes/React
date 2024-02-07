@@ -4,6 +4,7 @@ import Games from "./views/Games";
 import Cart from "./views/Cart";
 import AdminHome from "./views/admin/AdminHome";
 import Layout from "./components/Layout";
+import Game from "./views/Game";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/games",
         element: <Games />,
+      },
+      {
+        path: "games/:gameId",
+        element: <Game/>
       },
       {
         path: "/cart",
