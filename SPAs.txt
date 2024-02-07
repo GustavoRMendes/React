@@ -8,8 +8,8 @@ Melhor experiência pós carregamento inicial e fluidez de um aplicativo nativo.
 
 ---------------------------------------------------------------
 npm install react-router-dom
-Components
-database.json
+src/Components
+src/database.json
 ---------------------------------------------------------------
 
 Cria o router que são as rotas
