@@ -1,6 +1,13 @@
 useParams no react-router-dom, retorna um objeto de chave dos params dinâmicos da URL atual.
-
 sintaxe: 
+------------------------------------------------
+router.jsx
+
+path:'/games/:gameId',
+element: <Game/>
+------------------------------------------------
+'views/Game.jsx'
+
 import { useParams } from "react-router-dom"
 import games from "data.json"
 const { gameId } = useParams()
