@@ -9,7 +9,7 @@ Loader => é uma função específica de carregamento,basicamente um componente.
 sintaxe: 
 path: "products/:productId",
 element: <Product/>,
-loader: ({  }) => {
+loader: ({ params,request,context }) => {
 
 }
 
