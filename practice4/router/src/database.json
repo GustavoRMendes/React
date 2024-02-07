@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Fifa 23",
+    "description": "Futebol",
+    "price": 299.99
+  },
+  {
+    "id": 2,
+    "name": "Hogwarts Legacy",
+    "description": "Harry Potter",
+    "price": 199.99
+  },
+  {
+    "id": 3,
+    "name": "Lego Batman",
+    "description": "Justice League",
+    "price": 229.99
+  },
+  {
+    "id": 4,
+    "name": "Dragon Ball",
+    "description": "Anime",
+    "price": 99.99
+  },
+  {
+    "id": 5,
+    "name": "Spider-Man",
+    "description": "Homem Aranha",
+    "price": 399.99
+  }
+]
