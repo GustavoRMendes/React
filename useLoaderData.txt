@@ -1,0 +1,17 @@
+useLoaderData() basicamente chama o loadGame.js
+
+sintaxe:
+
+Game.jsx
+import { useLoaderData } from "react-route-dom"
+const game = useLoaderData()
+---------------------------------------------------------
+
+loadGame.js
+loadGame({ params })
+ import games from data.json
+ const game = games.find(g => g.id === +params.gameId)
+ if(!game){
+  throw new Response("404 Not found",{status:404})
+ }
+ return game;
