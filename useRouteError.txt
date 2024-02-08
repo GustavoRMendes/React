@@ -1,0 +1,16 @@
+useRouteError() retorna o erro de rota mais próximos, que através desse erro, podemos tratá-lo.
+-------------------------------------------------------------
+
+sintaxe:
+
+import { useRouteError, isRouteErrorResponse } from "react-router-dom"
+const error = useRouteError()
+
+if(isRouteErrorResponse(error)){
+  switch(error){
+    case 404:
+      return <h2>Oops. Algo deu errado</h2>
+  }
+}
+
+return <h2>Algo deu errado</h2>
