@@ -1,11 +1,7 @@
-import { Link, useParams } from "react-router-dom";
-import games from '../database.json'
+import { Link, useLoaderData } from "react-router-dom";
 export default function Game(){
-  const { gameId } = useParams()
-  const game = games.find(g => g.id === +gameId)
-  if(!game){
-    return <h2>Produto não encontrado</h2>
-  }
+  const game = useLoaderData()
+
   return (
     <>
       <section>
