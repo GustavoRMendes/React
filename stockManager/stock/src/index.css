@@ -1,0 +1,227 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #2d2d2d;
+}
+
+h1 {
+  font-weight: 100;
+}
+a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  padding: 2rem;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 90vw;
+  font-size: 1rem;
+  align-items: center;
+}
+
+.links {
+  gap: 3rem;
+  display: flex;
+}
+
+.boxes {
+  display: flex;
+  width: 90vw;
+  gap: 3rem;
+}
+
+.box {
+  width: 20rem;
+  height: 7rem;
+  padding: 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 0.2rem;
+  background-color: #1a1a1a;
+}
+
+.number {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.table1 {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 1rem;
+  gap: 15rem;
+}
+.table2 {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 1rem;
+  gap: 9.75rem;
+}
+
+.results {
+  display: flex;
+  width: 90vw;
+  justify-content: space-between;
+  padding-top: 1rem;
+  font-weight: 600;
+}
+.boxResult1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  width: 25rem;
+}
+.boxResult2 {
+  display: flex;
+  justify-content: space-between;
+
+  width: 35rem;
+  padding: 0.5rem;
+}
+.viewButton {
+  background-color: white;
+  color: #545454;
+  height: 2rem;
+  border: none;
+  width: 5rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+/* Table */
+.tableItems {
+  border: none;
+  width: 90vw;
+  padding: 1rem;
+}
+.active {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.tableItems > thead {
+  background-color: #1a1a1a;
+  border: none;
+}
+.tableItems > tbody {
+  border: 2px solid black;
+  background-color: rgb(50, 50, 50);
+  text-align: center;
+}
+
+.tableItems > td {
+  padding: 2rem;
+}
+
+.linksItems {
+  display: flex;
+  gap: 2rem;
+}
+table td {
+  padding: 1.5rem;
+  border: none;
+}
+table th {
+  padding: 1rem;
+}
+
+table button {
+  margin: 0.5rem;
+  padding: 0.4rem;
+  cursor: pointer;
+  width: 5rem;
+  border-radius: 0.2rem;
+}
+
+/* Buttons */
+.blue {
+  background-color: #535bf2;
+  border: none;
+  color: #323232;
+}
+.white {
+  background-color: white;
+  color: #444444;
+  font-weight: 100;
+  border: none;
+}
+
+.red {
+  background-color: crimson;
+  border: none;
+  color: #232323;
+}
+
+/* Form */
+.save {
+  background-color: #535bf2;
+  border: none;
+  color: #ffffff;
+  padding: 0.6rem;
+  cursor: pointer;
+  width: 5rem;
+  border-radius: 0.3rem;
+}
+
+.form input {
+  padding: 0.4rem;
+  margin: 1rem;
+}
+.form select {
+  padding: 0.4rem;
+  margin: 1rem;
+}
+
+.view button {
+  margin-left: 2rem;
+  padding: 0.4rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+.view span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.flex div {
+  margin-top: 3rem;
+}
+.flex span {
+  background-color: #1a1a1a;
+  padding: 0.8rem;
+  width: 20rem;
+  margin-right: 1rem;
+  border-radius: 0.2rem;
+}
