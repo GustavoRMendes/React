@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function App() {
   // useState
@@ -12,12 +12,21 @@ export default function App() {
     }
   },[counter]);
 
+  //useRef
+  const ref = useRef()
+  function focu() {
+    ref.current.focus()
+  }
   return (
     <>
       
       <button onClick={() => setCounter((count) => (count += 1))}>
         Count is {counter}
       </button>
+      <div>
+        <input type="text" ref={ref} />
+        <button onClick={focu}>Focus</button>
+      </div>
     </>
   );
 }
