@@ -7,6 +7,9 @@ export default function App() {
   // useEffect
   useEffect(() => {
     console.log('oiii')
+    return () => {
+      console.log('componentWillUnmount')
+    }
   },[counter]);
 
   return (
