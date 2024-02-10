@@ -16,6 +16,16 @@ const App = () => {
     setTasks([...tasks,newTask])
     inputRef.current.value = ''
   }
+  function handleOk(id){
+    const searchId = tasks.findIndex(item => item.id === id)
+    if(searchId === -1){
+      return;
+    }
+    const newTasks = [...tasks]
+    newTasks[searchId].isCompleted =  true
+    setTasks(newTasks)
+    
+  }
   return (
     <>
       <code>Hello React!</code> <br />
@@ -24,10 +34,10 @@ const App = () => {
       <main>
         <h1>To-Do App</h1>
         <input type="text" ref={inputRef} />
-        <button onClick={handleAddTask}>Add</button>
+        <button onClick={handleAddTask}>Add</button> <br />
 
         {tasks.length > 0 &&
-          tasks.map((item) => <Task key={item.id} task={item} />)}
+          tasks.map((item) => <Task key={item.id} task={item} handleAddOk={handleOk} />)}
         {!tasks.length && <h2>Lista vazia 🧐</h2>}
       </main>
     </>
