@@ -5,6 +5,7 @@
 // function click(){ dispatch({ type: 'action.type'})}
 
 import { useReducer } from "react";
+import Modal from "./components/Modal";
 
 function App() {
   function reducer(state, action) {
@@ -29,6 +30,7 @@ function App() {
     <>
       <button onClick={handleClick}>This count is {state.count}</button>
       {state.text && <h2>useReducer</h2>}
+      <Modal/>
     </>
   );
 }
