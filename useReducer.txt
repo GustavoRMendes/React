@@ -1,0 +1,18 @@
+o useReducer tem essa sintaxe:
+
+const [state,dispatch] = useReducer(reducer,initalizeArg)
+
+function reducer(state,action){
+  switch(action.type){
+    case "increment":
+      return {...state,count: state.count +  1}
+  }
+}
+const initalizeArg = { count: 0}
+
+function handleClick({
+  dispatch({ type: 'increment' })
+})
+
+
+ É uma alternativa para mantermos nosso estado quando o mesmo é mais complexo. 
