@@ -24,3 +24,27 @@ const user = {name:''}
 <UserContext.Provider value={user}>
   <UserInfo />
 </UserContext.Provider>
+
+
+
+-------------------------------------------------
+useContext
+
+./Components/PersonInfo.jsx
+const person = useContext(PersonContext)
+return (
+  h1 {person.name}
+)
+
+-----------------------------------
+./Context/PersonContext
+export const PersonContext = createContext()
+
+-------------------------------------
+App.jsx
+
+const person = { name : 'Gustavo'}
+return
+<PersonContext.Provider value={person}>
+    <PersonInfo/>
+<PersonContext.Provider >
