@@ -1,0 +1,9 @@
+é um React Hook que permite armazenar em cache uma definição de função entre re-renders.
+
+useCallback -> Retorna uma função memorizada, que só renderiza quando necessário.
+
+useCallback(fn, dependencies) 
+
+useCallback(() => {
+
+},[])
