@@ -2,6 +2,8 @@ o useMemo é utilizado para melhorar a performace.
 É um Hook que permite que você faça o cache do resultado de um cálculo entre re-renders.
 Otimiza a aplicação e aumenta o desempenho.
 
+ useMemo -> Retorna um valor memorizada, que só renderiza quando necessário
+
 useMemo(calculateValue,dependencies)
 
 useMemo(() => {
