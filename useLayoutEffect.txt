@@ -1,0 +1,7 @@
+é uma variação do useEffect que é executada síncronamente após todas as atualizações do DOM. É útil quando você precisa manipular o DOM diretamente, por exemplo, quando você precisa medir a largura ou altura de um elemento ou definir o foco em um elemento.
+
+useLayoutEffect(setup, dependencies)
+
+useLayoutEffect(() => {
+
+},[])
