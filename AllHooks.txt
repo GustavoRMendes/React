@@ -1,0 +1,42 @@
+    useState
+    useEffect
+    useRef
+    useContext
+    useReducer
+    useMemo
+    useCallback
+    useDebug
+    useLayoutEffect
+    useImperativeHandle
+------------------------------------------------------
+useEffect(() => {
+  const fetchApi = async() => {
+    const response = await fetch('')
+    const responseJSON = await response.json()
+    console.log(responseJSON)
+    setList(responseJSON)
+  }
+	
+  fetchApi()	
+
+},[dependencies])
+
+--------------------------------------------------------
+const [state,dispatch] = useReducer(reducer,{tasks: []})
+const [inputValue,setInputValue] = useState("")
+
+function reducer(state,action){
+ switch(action.type){
+  case 'add-task':
+    return {...state.tasks, tasks: [name: action.payload]}
+  default return state
+ }
+}
+
+input value={inputValue}
+
+button onclick= {() => dispatch({type: 'add-task', payload: inputValue})}
+
+{state.tasks.map((task) => <p>{task.name}</p>)}
+
+-------------------------------------------------------------
