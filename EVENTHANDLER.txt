@@ -1,0 +1,11 @@
+
+type Props = {
+
+onClick: MouseEventHandler
+onChange: FormEventHandler
+onFocus: FocusEventHandler
+onBluer: FocusEventHandler
+onSubmit: FormEventHandler
+
+}
+
