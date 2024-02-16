@@ -1,7 +1,13 @@
 const [name,setName] = useState<string>('')
 const [number,setNumber] = useState<number>(0)
 const [id,setId] = useState<number | null>(null)
+--------------------------------------------------
 
+tuplas
+
+let nomes : [string,string,number,boolean] = ['','',0,true]
+
+let array : number[] = [1,2,3,4,5]
 ---------------------------------------------------
 const inputRef = useRef<HTMLInputElement>(null)
   inputRef.current.value
