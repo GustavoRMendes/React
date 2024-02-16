@@ -1,0 +1,17 @@
+src 
+    app	
+	App.tsx
+
+	pages
+	    index.ts
+	    dashboard
+		Dashboard.tsx
+
+	routesv
+            index.tsx
+	
+        shared
+            components 
+	    context
+	    hooks
+	    services
