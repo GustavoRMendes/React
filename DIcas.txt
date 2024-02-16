@@ -1,0 +1,7 @@
+Criar types SEMPRE com letra maiúscula: type user
+
+Generics mais descritivos: <T,U>
+  
+Não coloque os nomes de types no Plural : type Routes
+
+Evite utilizar Prefixos : IUser
