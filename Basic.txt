@@ -1,0 +1,53 @@
+const [name,setName] = useState<string>('')
+const [number,setNumber] = useState<number>(0)
+const [id,setId] = useState<number | null>(null)
+
+---------------------------------------------------
+const inputRef = useRef<HTMLInputElement>(null)
+  inputRef.current.value
+
+---------------------------------------------------
+interface User {
+children : React.ReactNode
+onClick : () => void
+}
+----------------------------------------------------
+
+Unions 
+
+interface User 
+interface Adress
+type Person =  User & Adress
+
+----------------------------------------------------
+const Button : React.FC<ComponentsProps> = () => {}
+
+----------------------------------------------------
+
+type Planet = { name: string | null }
+
+----------------------------------------------------
+
+function example<T>(arg: T) : T {
+  return args
+}
+
+------------------------------------------------------
+Pick e Omit
+type UserWithoutProp = {cpf:string } & Pick<User,'doc'>
+type UserWithoutProp = Omit <Use, 'doc>
+
+----------------------------------------------------
+Record
+
+type Names = Record<'name' | 'color' | 'type', string>
+
+---------------------------------------------
+Index Signature
+
+  type UserAdress = {
+    [key: string]: number
+  }
+
+  const User: UserAdress = { math: 900}
+  type UserAdress = Record < string | string , number>
