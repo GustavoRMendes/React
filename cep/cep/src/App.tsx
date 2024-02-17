@@ -1,17 +1,49 @@
 import { useEffect, useState } from "react";
 export default function App() {
-  const [list, setList] = useState([""]);
-  useEffect(() => {
-    const fetchApi = async () => {
-      const response = await fetch(`https://viacep.com.br/ws/76824436/json`);
-      if (!response.ok) {
-        throw new Response("Not found!");
-      }
-      const result = await response.json();
-      setList(result.localidade);
-    };
-    fetchApi(), [];
+  const [cep, setCep] = useState('');
+  const [address, setAddress] = useState({
+    localidade: "",
+    bairro: "",
+    cep: "",
+    logradouro: "",
+    complemento: "",
   });
 
-  return <>cidade: {list}</>;
+  useEffect(() => {
+    const fetchApi = async () => {
+      try {
+        const response = await fetch(`https://viacep.com.br/ws/${cep}/json`);
+        if (!response.ok) {
+          throw new Error("Not found!");
+        }
+        const result = await response.json();
+        setAddress(result);
+      } catch (error) {
+        console.error("Erro ao buscar API:", error);
+      }
+    };
+    if (cep.length === 8) { 
+      fetchApi();
+    }
+  }, [cep]);
+  
+  const handleInputChange = (ev) => {
+    setCep(ev.target.value);
+  };
+  return (
+    <div>
+      <h1>Buscador de CEP</h1>
+       <input
+        type="text"
+        placeholder="Digite o CEP"
+        value={cep}
+        onChange={handleInputChange}
+      />
+      <p> Cep: {address.cep} </p>
+      <p> Cidade: {address.localidade} </p>
+      <p> Bairro: {address.bairro} </p>
+      <p> Logradouro: {address.logradouro} </p>
+      <p> Complemento: {address.complemento} </p>
+    </div>
+  );
 }
