@@ -1,0 +1,16 @@
+useContext retorna um objeto com dois valores
+{ Provider,Consumer}
+
+const NumberConxtext = createContext()
+
+App()
+  <NumberContext.Provider value={50}>
+  
+    <Display />
+  
+  </NumberContext.Provider>
+  
+Display
+  const value = useContext(NumberContext)
+  return <p> this value is {value}
+ 
