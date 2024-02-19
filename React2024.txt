@@ -1,0 +1,5 @@
+TanStack Query
+Zustand
+TanStack Router
+ShadCN UI
+React Hook Form
